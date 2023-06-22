@@ -1,0 +1,144 @@
+/* Color Palettes
+
+Monochromatic:
+#0074D9 (primary color)
+#3B90F9
+#A6C9FF
+#FFFFFF (neutral color)
+
+Analogous Colors:
+#0074D9 (primary color)
+#00BFFF
+#00FF7F
+#FFFFFF (neutral color)
+
+Dark and Light Blue:
+#0074D9 (primary color)
+#0065A4
+#5BC0DE
+#FFFFFF (neutral color) */
+
+.custom-nav-bg {
+    background-color: #FFFFFF;
+}
+
+nav {
+    font-size: 1.15rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #0074D9;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #0074D9;
+    font-weight: 500;
+}
+
+
+.carousel-item img {
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    color: white;
+    background-color: #00bfffba;
+    padding: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+footer {
+    max-height: 3rem;
+    color: white;
+    font-size: 1.15rem;
+    padding: 10px;
+    background: #0065A4;
+}
+
+footer p {
+    margin-left: 10px;
+}
+
+/* TimeTable */
+.bg-break {
+    background: #0065a42d;
+}
+
+
+/* Student Profile */
+
+.profileHeading {
+    font-size: 22px;
+    color: #0065A4;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.profile-subHeading {
+    font-size: 18px;
+    color: #0065A4;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#studentClass {
+    font-size: 1.5rem;
+}
+
+.profileSubheading {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.card a {
+    text-decoration: none;
+    color: black
+}
+
+.card p{
+    margin-bottom:10px;
+}
+
+/* Login & Extra Activity INVALID */
+
+#loginError, #noActivityEntered {
+    color: red;
+    font-weight: 500;
+    visibility: hidden;
+}
+
+
+/* Extra Activities */
+.extraActivites {
+    width: 30%;
+    margin: 10px auto;
+    padding: 50px 50px 10px 50px;
+    border: 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#listOfActivities {
+    margin-top: 25px;
+}
+
+#listOfActivities>dt {
+    font-size: 1.2rem;
+}
+
+#listOfActivities>dd {
+    font-size: 1rem;
+}

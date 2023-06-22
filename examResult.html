@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exam Result - Spring Flowers School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-nav-bg px-3">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="welcome.html">
+                <img src="assets/logo2.png" alt="Spring Flowers School" class="img-fluid mx-3" style="width:180px">
+            </a>
+
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="welcome.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="timetable.html">Time Table</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Exam Result</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="extraActivity.html">Extra Activity</a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav d-flex mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <!-- Default dropright button -->
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="studentProfile"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="studentProfile.html">Profile</a>
+                                <a class="dropdown-item" href="index.html">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form to select Subject & Display Result -->
+
+    <div class="container" style="min-height:80vh">
+    <div class="container m-5 pt-5 px-5 border shadow mx-auto" style="max-width:900px;">
+
+        <h3 class="mb-5" style="text-align:center;">Exam Results</h3>
+
+        <div class="mx-auto my-4" style="max-width:560px">
+            <div class="input-group input-group-lg">
+                <select id="selectSub" class="form-select" aria-label="Default select example"
+                    onchange="getMarksFromJSON()">
+                    <option selected>Select Subject</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="computers">Computer Science</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="math">Math</option>
+                    <option value="physics">Physics</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="mx-auto my-4" style="max-width:450px">
+            <div class="input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Marks</span>
+                <input type="text" class="form-control" value="" id="marks" disabled>
+            </div>
+
+            <div class="mx-auto my-4" style="max-width:450px">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Grade</span>
+                    <input type="text" class="form-control" value="" id="grade" disabled>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mx-auto mb-5" style="margin-top:100px">
+            <em><b>*Grades are calculated automatically as follows:</b> <br>
+                90 and above - A+; 80 to 89 - A; 70 to 79 - B; 60 to 69 - C; 50 to 59 - D; below 50 - F
+            </em>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by David Joseph</p>
+    </footer>
+
+    <script>
+        let studentName = sessionStorage.getItem("username");
+
+        if (studentName != null) {
+            document.getElementById("studentProfile").innerHTML = studentName;
+        }
+        else {
+            window.location.href="index.html";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

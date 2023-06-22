@@ -1,0 +1,150 @@
+{
+    "students": [
+      {
+        "studentId": 1,
+        "username": "Rajesh",
+        "profilePicture": "assets/user-1.jpg",
+        "fullname": "Rajesh Ramayana Koothrappali",
+        "password": "rajesh123",
+        "grade": "X A",
+        "email": "rajesh@example.com",
+        "mobile": "+91 98765 43210",
+        "bloodGroup": "B +",
+        "father": {
+          "name": "Mr. Koothrappali",
+          "email": "mrkoothrappali@example.com",
+          "mobile": "+1 123-456-7890"
+        },
+        "mother": {
+          "name": "Mrs. Koothrappali",
+          "email": "mrskoothrappali@example.com",
+          "mobile": "+1 987-654-3210"
+        },
+        "marks": {
+          "Math": 90,
+          "Chemistry": 85,
+          "Physics": 80,
+          "Computers": 95,
+          "English": 75,
+          "French": 70
+        }
+      },
+      {
+        "studentId": 2,
+        "username": "Leonard",
+        "profilePicture": "assets/user-3.jpg",
+        "fullname": "Leonard Hofstadter",
+        "password": "leonard123",
+        "grade": "X B",
+        "email": "leonard@example.com",
+        "mobile": "+91 +91 87654 32109",
+        "bloodGroup": "O +",
+        "father": {
+          "name": "Mr. Hofstadter",
+          "email": "mrhofstadter@example.com",
+          "mobile": "+1 123-456-7890"
+        },
+        "mother": {
+          "name": "Mrs. Hofstadter",
+          "email": "mrshofstadter@example.com",
+          "mobile": "+1 987-654-3210"
+        },
+        "marks": {
+          "Math": 85,
+          "Chemistry": 80,
+          "Physics": 90,
+          "Computers": 70,
+          "English": 75,
+          "French": 80
+        }
+      },
+      {
+        "studentId": 3,
+        "username": "Sheldon",
+        "profilePicture": "assets/user-2.jpg",
+        "fullname": "Sheldon Cooper",
+        "password": "sheldon123",
+        "grade": "XI A",
+        "email": "sheldon@example.com",
+        "mobile": "+91 76543 21098",
+        "bloodGroup": "O -",
+        "father": {
+          "name": "Mr. Cooper",
+          "email": "mrcooper@example.com",
+          "mobile": "+1 123-456-7890"
+        },
+        "mother": {
+          "name": "Mrs. Cooper",
+          "email": "mrscooper@example.com",
+          "mobile": "+1 987-654-3210"
+        },
+        "marks": {
+          "Math": 95,
+          "Chemistry": 85,
+          "Physics": 80,
+          "Computers": 90,
+          "English": 80,
+          "French": 75
+        }
+      },
+      {
+        "studentId": 4,
+        "username": "Howard",
+        "profilePicture": "assets/user-4.jpg",
+        "fullname": "Howard Wolowitz",
+        "password": "howard123",
+        "grade": "XII B",
+        "email": "howard@example.com",
+        "mobile": "+91 65432 10987",
+        "bloodGroup": "B -",
+        "father": {
+          "name": "Mr. Wolowitz",
+          "email": "mrwolowitz@example.com",
+          "mobile": "+1 123-456-7890"
+        },
+        "mother": {
+          "name": "Mrs. Wolowitz",
+          "email": "mrswolowitz@example.com",
+          "mobile": "+1 987-654-3210"
+        },
+        "marks": {
+          "Math": 80,
+          "Chemistry": 70,
+          "Physics": 75,
+          "Computers": 85,
+          "English": 85,
+          "French": 90
+        }
+      },
+      {
+        "studentId": 5,
+        "username": "Penny",
+        "profilePicture": "assets/user-5.jpg",
+        "fullname": "Penny Hofstadter",
+        "password": "penny123",
+        "grade": "VIII B",
+        "email": "penny@example.com",
+        "mobile": "+91 54321 09876",
+        "bloodGroup": "AB +",
+        "father": {
+          "name": "Mr. Wyatt",
+          "email": "mrwyatt@example.com",
+          "mobile": "+1 123-456-7890"
+        },
+        "mother": {
+          "name": "Mrs. Susan",
+          "email": "mrssusan@example.com",
+          "mobile": "+1 987-654-3210"
+        },
+        "marks": {
+          "Math": 60,
+          "Chemistry": 60,
+          "Physics": 55,
+          "Computers": 75,
+          "English": 84,
+          "French": 80
+        }
+      }
+    ]
+  }
+  
